@@ -1,0 +1,17 @@
+{% extends 'madlib/base.html' %}
+{% load static %}
+{% block welcome %}
+<div id="title" class="container-fluid">
+    <div class="row">
+        <h1 class="center w-100">MAD LIBS</h1>
+    </div>
+    <div  class="row center padding">
+        <div class="col col-md-6">Welcome to my Mad Libs Stories!</div>
+        <div class="col col-md-6 text-left">
+            <a href="{% url 'madlib:madlib_form' %}" class="btn btn-primary">Try out a story</a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}
